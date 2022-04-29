@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "vTK5ZrHyHio2Kn8Q7IWx67ZOcXeh4jVu1UewYAtNAUl6f8sVcwv3rPRFgooCy1FRuLvFFwBCj8rYceMe1zj73Q==",
+  "dgSpecHash": "5FwBhAWnILJfmtfmqzYPevyx69q0ZAcln3Apo+mfudch6Wt3CQbbEefZ2t1GFIhMdn8FpXnGrgjwGRPtcPwiXg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\TFX5075G\\Desktop\\JunHyeop_Algorithm\\Algorithm\\Algorithm.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\HANSUNG\\Desktop\\JunHyeop_Algorithm\\Algorithm\\Algorithm.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\HANSUNG\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\HANSUNG\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\HANSUNG\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
+    "C:\\Users\\HANSUNG\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512"
+  ],
   "logs": []
 }

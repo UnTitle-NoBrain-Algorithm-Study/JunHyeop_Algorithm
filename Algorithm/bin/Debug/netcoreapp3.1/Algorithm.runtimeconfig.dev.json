@@ -1,8 +1,9 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\TFX5075G\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\TFX5075G\\.nuget\\packages"
+      "C:\\Users\\HANSUNG\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\HANSUNG\\.nuget\\packages",
+      "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
     ]
   }
 }

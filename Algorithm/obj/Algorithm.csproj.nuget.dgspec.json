@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\TFX5075G\\Desktop\\JunHyeop_Algorithm\\Algorithm\\Algorithm.csproj": {}
+    "C:\\Users\\HANSUNG\\Desktop\\JunHyeop_Algorithm\\Algorithm\\Algorithm.csproj": {}
   },
   "projects": {
-    "C:\\Users\\TFX5075G\\Desktop\\JunHyeop_Algorithm\\Algorithm\\Algorithm.csproj": {
+    "C:\\Users\\HANSUNG\\Desktop\\JunHyeop_Algorithm\\Algorithm\\Algorithm.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\TFX5075G\\Desktop\\JunHyeop_Algorithm\\Algorithm\\Algorithm.csproj",
+        "projectUniqueName": "C:\\Users\\HANSUNG\\Desktop\\JunHyeop_Algorithm\\Algorithm\\Algorithm.csproj",
         "projectName": "Algorithm",
-        "projectPath": "C:\\Users\\TFX5075G\\Desktop\\JunHyeop_Algorithm\\Algorithm\\Algorithm.csproj",
-        "packagesPath": "C:\\Users\\TFX5075G\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\TFX5075G\\Desktop\\JunHyeop_Algorithm\\Algorithm\\obj\\",
+        "projectPath": "C:\\Users\\HANSUNG\\Desktop\\JunHyeop_Algorithm\\Algorithm\\Algorithm.csproj",
+        "packagesPath": "C:\\Users\\HANSUNG\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HANSUNG\\Desktop\\JunHyeop_Algorithm\\Algorithm\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\TFX5075G\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HANSUNG\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,6 +43,12 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "System.Collections": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -54,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -12,3 +12,17 @@ C:\Users\TFX5075G\Desktop\JunHyeop_Algorithm\Algorithm\obj\Debug\netcoreapp3.1\A
 C:\Users\TFX5075G\Desktop\JunHyeop_Algorithm\Algorithm\obj\Debug\netcoreapp3.1\Algorithm.dll
 C:\Users\TFX5075G\Desktop\JunHyeop_Algorithm\Algorithm\obj\Debug\netcoreapp3.1\Algorithm.pdb
 C:\Users\TFX5075G\Desktop\JunHyeop_Algorithm\Algorithm\obj\Debug\netcoreapp3.1\Algorithm.genruntimeconfig.cache
+C:\Users\HANSUNG\Desktop\JunHyeop_Algorithm\Algorithm\bin\Debug\netcoreapp3.1\Algorithm.exe
+C:\Users\HANSUNG\Desktop\JunHyeop_Algorithm\Algorithm\bin\Debug\netcoreapp3.1\Algorithm.deps.json
+C:\Users\HANSUNG\Desktop\JunHyeop_Algorithm\Algorithm\bin\Debug\netcoreapp3.1\Algorithm.runtimeconfig.json
+C:\Users\HANSUNG\Desktop\JunHyeop_Algorithm\Algorithm\bin\Debug\netcoreapp3.1\Algorithm.runtimeconfig.dev.json
+C:\Users\HANSUNG\Desktop\JunHyeop_Algorithm\Algorithm\bin\Debug\netcoreapp3.1\Algorithm.dll
+C:\Users\HANSUNG\Desktop\JunHyeop_Algorithm\Algorithm\bin\Debug\netcoreapp3.1\Algorithm.pdb
+C:\Users\HANSUNG\Desktop\JunHyeop_Algorithm\Algorithm\obj\Debug\netcoreapp3.1\Algorithm.csproj.AssemblyReference.cache
+C:\Users\HANSUNG\Desktop\JunHyeop_Algorithm\Algorithm\obj\Debug\netcoreapp3.1\Algorithm.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HANSUNG\Desktop\JunHyeop_Algorithm\Algorithm\obj\Debug\netcoreapp3.1\Algorithm.AssemblyInfoInputs.cache
+C:\Users\HANSUNG\Desktop\JunHyeop_Algorithm\Algorithm\obj\Debug\netcoreapp3.1\Algorithm.AssemblyInfo.cs
+C:\Users\HANSUNG\Desktop\JunHyeop_Algorithm\Algorithm\obj\Debug\netcoreapp3.1\Algorithm.csproj.CoreCompileInputs.cache
+C:\Users\HANSUNG\Desktop\JunHyeop_Algorithm\Algorithm\obj\Debug\netcoreapp3.1\Algorithm.dll
+C:\Users\HANSUNG\Desktop\JunHyeop_Algorithm\Algorithm\obj\Debug\netcoreapp3.1\Algorithm.pdb
+C:\Users\HANSUNG\Desktop\JunHyeop_Algorithm\Algorithm\obj\Debug\netcoreapp3.1\Algorithm.genruntimeconfig.cache
