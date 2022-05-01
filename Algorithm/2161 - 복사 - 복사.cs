@@ -1,29 +1,63 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
 
-namespace Algorithm
+namespace Algorithm_CSharp
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int input = Convert.ToInt32(Console.ReadLine());
-            int[] arr=new int[input];
-            long sum = 0;
+            int inputCount = int.Parse(Console.ReadLine());
+            Dictionary<string, Func<Stack<int>, int>> functionDic = new Dictionary<string, Func<Stack<int>, int>>();
+            functionDic.Add("empty", IsEmpty);
+            functionDic.Add("size", Size);
+            functionDic.Add("top", Top);
+            functionDic.Add("pop", Pop);
 
-            for (int i = 0; i < input; i++)
+            StringBuilder resultBuilder = new StringBuilder();
+            Stack<int> stack = new Stack<int>();
+            for (int index = 0; index < inputCount; ++index)
             {
-                arr[i] = Convert.ToInt32(Console.ReadLine());
+                string data = Console.ReadLine();
+                if (!data.StartsWith("push"))
+                    resultBuilder.AppendLine(functionDic[data](stack).ToString());
+                else
+                    stack.Push(int.Parse(data.Substring("push ".Length)));
             }
 
-            Array.Sort(arr);
+            Console.WriteLine(resultBuilder.ToString());
+        }
 
-            for (int j = 0; j < input; j++)
-            {
-                sum += Math.Abs(j + 1 - arr[j]);
-            }
+        public static int IsEmpty(Stack<int> stack)
+        {
+            int result = stack.Count != 0 ? 0 : 1;
+            return result;
+        }
 
-            Console.WriteLine(sum);
+        public static int Top(Stack<int> stack)
+        {
+            if (stack.Count != 0)
+                return stack.Peek();
+            else
+                return -1;
+        }
+
+        public static int Size(Stack<int> stack)
+        {
+            return stack.Count;
+        }
+
+        public static void Push(Stack<int> stack, int number)
+        {
+            stack.Push(number);
+        }
+
+        public static int Pop(Stack<int> stack)
+        {
+            if (stack.Count != 0)
+                return stack.Pop();
+            else return -1;
         }
     }
 }
