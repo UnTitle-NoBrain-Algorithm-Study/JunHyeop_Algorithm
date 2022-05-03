@@ -9,36 +9,35 @@ namespace Algorithm
         static void Main(string[] args)
         {
             int[] input = Array.ConvertAll(Console.ReadLine().Split(),int.Parse);
-            Queue<int> queue = new Queue<int>();
+            Dictionary<string, string> connect = new Dictionary<string, string>();
 
-            for (int i = 1; i <= input[0]; i++)
+            bool[] node=new bool[input[0]];
+
+            for (int i = 1; i <= input[1]; i++)
             {
-                queue.Enqueue(i);
+                string[] data = Console.ReadLine().Split();
+                connect.Add(data[0], data[1]);
+                connect.Add(data[1], data[0]);
             }
 
-
-            Console.WriteLine(Josephus(queue, input[1]));
+            DFS(node, input[2]);
+            BFS(node, input[2]);
         }
 
-        public static StringBuilder Josephus(Queue<int> queue, int th)
+        public static void DFS(bool[] node, int start)
         {
-            StringBuilder result = new StringBuilder();
-
-            result.Append('<');
-
-            while (queue.Count!=0)
+            if (node[start])
             {
-                for (int i = 1; i < th; i++)
-                {
-                    queue.Enqueue(queue.Dequeue());
-                }
-                result.Append(queue.Dequeue()+", ");
+                return;
             }
+            node[start] = true;
+            // 여기에 이프문 들어갈예정
+            DFS(node, start);
+        }
 
-            result.Length -= 2;
-            result.Append('>');
+        public static void BFS(bool[] node, int start)
+        {
 
-            return result;
         }
     }
 }
