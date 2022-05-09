@@ -15,6 +15,7 @@ namespace Algorithm
 
         List<List<int>> adj;
         bool[] visited;
+        Queue<int> queue = new Queue<int>();
 
         public NODE(int n, int m, int v)
         {
@@ -43,7 +44,7 @@ namespace Algorithm
         public void DFS(int V)
         {
             visited[V] = true;
-            str.Append(V+" ");
+            str.Append(V + " ");
             for (int i = 0; i < adj[V].Count; i++)
             {
                 int next = adj[V][i];
@@ -52,14 +53,47 @@ namespace Algorithm
                     DFS(next);
                 }
             }
-
-            str.Remove(str.Length - 1, 1);
-
-            Console.WriteLine(str);
-            str.Clear();
         }
 
+        public void BFS(int V)
+        {
+            visited[V] = true;
 
+            if (queue.Count > 0)
+            {
+                str.Append(queue.Dequeue() + " ");
+            }
+            else
+            {
+                str.Append(V + " ");
+            }
+
+            for (int i = 0; i < adj[V].Count; i++)
+            {
+                int next = adj[V][i];
+                if (!visited[next])
+                {
+                    queue.Enqueue(next);
+                    visited[next] = true;
+                }
+            }
+
+            if (queue.Count > 0)
+            {
+                BFS(queue.Peek());
+            }
+        }
+
+        public void print()
+        {
+            str.Remove(str.Length - 1, 1);
+            Console.WriteLine(str);
+            str.Clear();
+            for (int i = 0; i < visited.Length; i++)
+            {
+                visited[i] = false;
+            }
+        }
     }
 
 
@@ -73,6 +107,9 @@ namespace Algorithm
             NODE node = new NODE(input[0], input[1], input[2]);
 
             node.DFS(input[2]);
+            node.print();
+            node.BFS(input[2]);
+            node.print();
         }
     }
 }
