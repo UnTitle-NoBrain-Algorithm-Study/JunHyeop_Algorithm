@@ -9,10 +9,11 @@ namespace Algorithm
         public int N; // 정점의 개수
         public int M; // 간선의 개수
         public int V; // 시작 정점
-        StringBuilder str = new StringBuilder();
+        public int num = 1;
 
         List<List<int>> adj;
         bool[] visited;
+        int[] sequence;
         Queue<int> queue = new Queue<int>();
 
         public NODE(int n, int m, int v)
@@ -21,8 +22,9 @@ namespace Algorithm
             M = m;
             V = v;
 
-            adj= new List<List<int>>(N);
+            adj = new List<List<int>>(N);
             visited = new bool[N + 1];
+            sequence = new int[N + 1];
 
             for (int i = 0; i <= N; i++)
             {
@@ -39,32 +41,11 @@ namespace Algorithm
             }
         }
 
-        public void DFS(int V)
-        {
-            visited[V] = true;
-            str.Append(V + " ");
-            for (int i = 0; i < adj[V].Count; i++)
-            {
-                int next = adj[V][i];
-                if (!visited[next])
-                {
-                    DFS(next);
-                }
-            }
-        }
-
         public void BFS(int V)
         {
             visited[V] = true;
 
-            if (queue.Count > 0)
-            {
-                str.Append(queue.Dequeue() + " ");
-            }
-            else
-            {
-                str.Append(V + " ");
-            }
+            sequence[V] = num;
 
             for (int i = 0; i < adj[V].Count; i++)
             {
@@ -78,23 +59,19 @@ namespace Algorithm
 
             if (queue.Count > 0)
             {
+                num++;
                 BFS(queue.Peek());
             }
         }
 
         public void print()
         {
-            str.Remove(str.Length - 1, 1);
-            Console.WriteLine(str);
-            str.Clear();
-            for (int i = 0; i < visited.Length; i++)
+            for (int i = 1; i < sequence.Length; i++)
             {
-                visited[i] = false;
+                Console.WriteLine(sequence[i]);
             }
         }
     }
-
-
 
     class Program
     {
@@ -104,8 +81,6 @@ namespace Algorithm
 
             NODE node = new NODE(input[0], input[1], input[2]);
 
-            node.DFS(input[2]);
-            node.print();
             node.BFS(input[2]);
             node.print();
         }

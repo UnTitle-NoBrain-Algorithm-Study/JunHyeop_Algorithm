@@ -21,7 +21,7 @@ namespace Algorithm
             M = m;
             V = v;
 
-            adj= new List<List<int>>(N);
+            adj = new List<List<int>>(N);
             visited = new bool[N + 1];
 
             for (int i = 0; i <= N; i++)
@@ -53,35 +53,6 @@ namespace Algorithm
             }
         }
 
-        public void BFS(int V)
-        {
-            visited[V] = true;
-
-            if (queue.Count > 0)
-            {
-                str.Append(queue.Dequeue() + " ");
-            }
-            else
-            {
-                str.Append(V + " ");
-            }
-
-            for (int i = 0; i < adj[V].Count; i++)
-            {
-                int next = adj[V][i];
-                if (!visited[next])
-                {
-                    queue.Enqueue(next);
-                    visited[next] = true;
-                }
-            }
-
-            if (queue.Count > 0)
-            {
-                BFS(queue.Peek());
-            }
-        }
-
         public void print()
         {
             str.Remove(str.Length - 1, 1);
@@ -105,8 +76,6 @@ namespace Algorithm
             NODE node = new NODE(input[0], input[1], input[2]);
 
             node.DFS(input[2]);
-            node.print();
-            node.BFS(input[2]);
             node.print();
         }
     }
